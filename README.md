@@ -28,7 +28,7 @@ Since Pelican is intended to generate HTML, there is a strong chance some HTML m
 ## known bugs
 
 - I can't confugure pelican to stop generating certain pages, like article tag lists.
-- It fails with a NoneType error after warning that Category_URL is set to none.
+- I can't disable tags or other unwanted pages. These are output as HTML which is invalid Gemtext.
 - I call striptags to remove HTML markup, but this dosen't preserve spaces or any formatting from the source files.
 
 I know from the Jinja site it is possible to configure output syntax, (i.e. Gemtext style links, headings, links)  but I haven't yet seen how.
