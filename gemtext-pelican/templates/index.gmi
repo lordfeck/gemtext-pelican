@@ -1,0 +1,22 @@
+{% extends "base.gmi" %}
+{% block content %}
+
+{% if SITE_DESC %}{{ SITE_DESC }}{% endif %}
+
+## Pages
+{% for page in pages %}
+=> {{ SITEURL }}/{{ page.url }} {{ page.title|striptags }}
+{% endfor %}
+
+## All entries
+{% for article in articles %}
+=> {{ SITEURL }}/{{ article.url }} {{ article.title|striptags }} [{{ article.locale_date }}]
+{% endfor %}
+
+## Links
+{% for link in LINKS %}
+=> {{ link[0] }} {{ link[1] }}
+{% endfor %}
+
+
+{% endblock content %}

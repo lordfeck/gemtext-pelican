@@ -1,0 +1,6 @@
+{% block title %}
+# {{ SITENAME }}
+{% endblock title %}
+{% block content %}
+{% endblock %}
+=> https://blog.getpelican.com/ Woven by Pelican

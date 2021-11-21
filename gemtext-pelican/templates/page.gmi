@@ -1,0 +1,11 @@
+{% extends "base.gmi" %}
+
+{% block title %}
+# {{ SITENAME }} - {{ page.title|striptags }}
+{%endblock%}
+
+{% block content %}
+{{ page.content | striptags }}
+{% endblock %}
+
+

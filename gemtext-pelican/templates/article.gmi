@@ -1,0 +1,14 @@
+{% extends "base.gmi" %}
+
+{% block title %}
+# {{ SITENAME }} - {{ article.title|striptags  }}
+{% endblock %}
+
+{% block content %}
+Published:  {{ article.locale_date | striptags }}
+Categories: {% for category in article.categories %}{{ category }}, {% endfor %}
+
+{{ article.content | striptags }}
+
+=> {{ SITEURL }} Index
+{% endblock %}
